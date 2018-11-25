@@ -1,0 +1,49 @@
+[user]
+	name = takecian
+	email = takecian@gmail.com
+[core]
+	autocrlf = input
+	compression = 0
+[alias]
+# add
+ad = add
+ap = add -p
+# cherry-pick
+cp = cherry-pick
+cpa = cherry-pick --abort
+cpc = cherry-pick --continue
+# commit
+ci = commit
+ca = commit -a
+cm = commit -m
+# status
+st = status
+# branch
+br = branch
+# checkout
+co = checkout
+# show
+sh = show
+# push
+ps = push
+psf = push -f
+psoc = !git push origin $(git bc)
+psfoc = !git push -f origin $(git bc)
+# pull
+plo = pull origin
+plom = pull origin master
+plu = pull upstream
+plum = pull upstream master
+# rebase
+rb = rebase --interactive
+rba = rebase --abort
+rbc = rebase --continue
+rbs = rebase --skip
+# fetch
+ft = fetch
+# submodule
+subu = git submodule update
+subui = submodule update --init --recursive
+
+[github]
+	user = takecian
