@@ -14,16 +14,21 @@ echo "ok. run brew upgrade..."
 brew upgrade --all
 
 formulas=(
+    go
+    hugo
     git
+    gibo
     wget
     curl
     tree
     openssl
     cask
+    autojump
     peco
     hub
     tig
     markdown
+    fish
 )
 
 echo "start brew install apps..."
