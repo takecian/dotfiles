@@ -8,6 +8,8 @@
 # add
 ad = add
 ap = add -p
+# branch
+bc = rev-parse --abbrev-ref HEAD
 # cherry-pick
 cp = cherry-pick
 cpa = cherry-pick --abort
@@ -22,6 +24,9 @@ st = status
 br = branch
 # checkout
 co = checkout
+# log
+l = log --oneline
+lg = log --oneline --graph --decorate
 # show
 sh = show
 # push
