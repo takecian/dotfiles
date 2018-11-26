@@ -52,3 +52,7 @@ subui = submodule update --init --recursive
 
 [github]
 	user = takecian
+
+[include]
+    path = ~/.gitconfig.local
+ 
