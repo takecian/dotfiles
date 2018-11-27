@@ -29,6 +29,8 @@ formulas=(
     tig
     markdown
     fish
+    rbenv
+    mas
 )
 
 echo "start brew install apps..."
@@ -45,6 +47,12 @@ casks=(
     iterm2
     atom
     docker
+    visual-studio-code
+    kindle
+    deckset
+    duet
+    charles
+
 )
 
 echo "start brew cask install apps..."
@@ -53,7 +61,13 @@ for cask in "${casks[@]}"; do
 done
 
 brew cleanup
-brew cask cleanup
+
+mas install 424389933 # finalcut
+mas install 434290957 # motion
+mas install 866773894 # quiver
+mas install 1278508951 # trello
+mas install 1289197285 # mindnode
+mas install 
 
 cat << END
 
