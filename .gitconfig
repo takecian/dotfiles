@@ -18,6 +18,8 @@ cpc = cherry-pick --continue
 ci = commit
 ca = commit -a
 cm = commit -m
+# diff
+df = diff
 # status
 st = status
 # branch
