@@ -40,15 +40,16 @@ plom = pull origin master
 plu = pull upstream
 plum = pull upstream master
 # rebase
-rb = rebase --interactive
+rb = rebase
+rbi = rebase --interactive
 rba = rebase --abort
 rbc = rebase --continue
 rbs = rebase --skip
 # fetch
 ft = fetch
 # submodule
-subu = git submodule update
-subui = submodule update --init --recursive
+su = !git submodule update
+sui = submodule update --init --recursive
 
 [github]
 	user = takecian
