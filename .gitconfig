@@ -48,6 +48,10 @@
 	rba = rebase --abort
 	rbc = rebase --continue
 	rbs = rebase --skip
+	# reset
+	rs = reset
+	rsoh = !git reset origin/$(git bc) --hard
+	rsuh = !git reset upstream/$(git bc) --hard
 	# show
 	sh = show
 	# status
