@@ -26,7 +26,7 @@
 	ca = commit --amend
 	cm = commit -m
 	# diff
-	df = diff
+	di = diff
 	# fetch
 	ft = fetch
 	fpr = "!f(){ git fetch origin pull/$1/head:$1; git checkout $1; }; f" # fetch pull request and checkout, $1 is PR number
