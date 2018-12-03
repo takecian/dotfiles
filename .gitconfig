@@ -5,53 +5,72 @@
 	autocrlf = input
 	compression = 0
 [alias]
-# add
-ad = add
-ap = add -p
-# branch
-bc = rev-parse --abbrev-ref HEAD
-# cherry-pick
-cp = cherry-pick
-cpa = cherry-pick --abort
-cpc = cherry-pick --continue
-# commit
-ci = commit
-ca = commit -a
-cm = commit -m
-# diff
-df = diff
-# status
-st = status
-# branch
-br = branch
-# checkout
-co = checkout
-# log
-l = log --oneline
-lg = log --oneline --graph --decorate
-# show
-sh = show
-# push
-ps = push
-psf = push -f
-psoc = !git push origin $(git bc)
-psfoc = !git push -f origin $(git bc)
-# pull
-plo = pull origin
-plom = pull origin master
-plu = pull upstream
-plum = pull upstream master
-# rebase
-rb = rebase
-rbi = rebase --interactive
-rba = rebase --abort
-rbc = rebase --continue
-rbs = rebase --skip
-# fetch
-ft = fetch
-# submodule
-su = !git submodule update
-sui = submodule update --init --recursive
+	# add
+	ad = add
+	aa = add --all
+	ai = add -i
+	ap = add -p
+	# branch
+	br = branch
+	bc = rev-parse --abbrev-ref HEAD
+	# cherry-pick
+	cp = cherry-pick
+	cpa = cherry-pick --abort
+	cpc = cherry-pick --continue
+	# checkout
+	co = checkout
+	# clone
+	cl = clone
+	# commit
+	ci = commit
+	ca = commit --amend
+	cm = commit -m
+	# diff
+	di = diff
+	# fetch
+	ft = fetch
+	fpr = "!f(){ git fetch origin pull/$1/head:$1; git checkout $1; }; f" # fetch pull request and checkout, $1 is PR number
+	fupr = "!f(){ git fetch upstream pull/$1/head:$1; git checkout $1; }; f"
+	# log
+	l = log --oneline
+	lg = log --oneline --graph --decorate
+	# push
+	ps = push
+	psf = push -f
+	psoc = !git push origin $(git bc) # push current branch to origin
+	psfoc = !git push -f origin $(git bc)
+	# pull
+	plo = pull origin
+	plom = pull origin master
+	ploc = !git pull origin $(git bc) # pull current remote branch from origin
+	plu = pull upstream
+	plum = pull upstream master
+	pluc = !git pull upstream $(git bc)
+	# rebase
+	rb = rebase
+	rbi = rebase --interactive
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbs = rebase --skip
+	# remote
+	ra = remote add
+	rr = remote rm
+	rv = remote -v
+	rao = remote add origin
+	rau = remote add upstream
+	rro = remote remove origin
+	rru = remote remove upstream
+	# reset
+	rs = reset
+	rsoh = !git reset origin/$(git bc) --hard
+	rsuh = !git reset upstream/$(git bc) --hard
+	# show
+	sh = show
+	# status
+	st = status
+	# submodule
+	su = !git submodule update
+	sui = submodule update --init --recursive
 
 [github]
 	user = takecian
@@ -59,3 +78,11 @@ sui = submodule update --init --recursive
 [include]
     path = ~/.gitconfig.local
  
+[merge]
+    tool = vscode
+[mergetool]
+    prompt = false
+    keepBackup = false
+[mergetool "vscode"]
+    cmd = '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code' \"$MERGED\"
+    trustExitCode = false
