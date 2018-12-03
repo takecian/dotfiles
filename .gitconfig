@@ -5,56 +5,56 @@
 	autocrlf = input
 	compression = 0
 [alias]
-# add
-ad = add
-ap = add -p
-# branch
-br = branch
-bc = rev-parse --abbrev-ref HEAD
-# cherry-pick
-cp = cherry-pick
-cpa = cherry-pick --abort
-cpc = cherry-pick --continue
-# checkout
-co = checkout
-# commit
-ci = commit
-ca = commit --amend
-cm = commit -m
-# diff
-df = diff
-# fetch
-ft = fetch
-fpr = "!f(){ git fetch origin pull/$1/head:$1; git checkout $1; }; f"
-fupr = "!f(){ git fetch upstream pull/$1/head:$1; git checkout $1; }; f"
-# log
-l = log --oneline
-lg = log --oneline --graph --decorate
-# push
-ps = push
-psf = push -f
-psoc = !git push origin $(git bc)
-psfoc = !git push -f origin $(git bc)
-# pull
-plo = pull origin
-plom = pull origin master
-ploc = !git pull origin $(git bc)
-plu = pull upstream
-plum = pull upstream master
-pluc = !git pull upstream $(git bc)
-# rebase
-rb = rebase
-rbi = rebase --interactive
-rba = rebase --abort
-rbc = rebase --continue
-rbs = rebase --skip
-# show
-sh = show
-# status
-st = status
-# submodule
-su = !git submodule update
-sui = submodule update --init --recursive
+	# add
+	ad = add
+	ap = add -p
+	# branch
+	br = branch
+	bc = rev-parse --abbrev-ref HEAD
+	# cherry-pick
+	cp = cherry-pick
+	cpa = cherry-pick --abort
+	cpc = cherry-pick --continue
+	# checkout
+	co = checkout
+	# commit
+	ci = commit
+	ca = commit --amend
+	cm = commit -m
+	# diff
+	df = diff
+	# fetch
+	ft = fetch
+	fpr = "!f(){ git fetch origin pull/$1/head:$1; git checkout $1; }; f"
+	fupr = "!f(){ git fetch upstream pull/$1/head:$1; git checkout $1; }; f"
+	# log
+	l = log --oneline
+	lg = log --oneline --graph --decorate
+	# push
+	ps = push
+	psf = push -f
+	psoc = !git push origin $(git bc)
+	psfoc = !git push -f origin $(git bc)
+	# pull
+	plo = pull origin
+	plom = pull origin master
+	ploc = !git pull origin $(git bc)
+	plu = pull upstream
+	plum = pull upstream master
+	pluc = !git pull upstream $(git bc)
+	# rebase
+	rb = rebase
+	rbi = rebase --interactive
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbs = rebase --skip
+	# show
+	sh = show
+	# status
+	st = status
+	# submodule
+	su = !git submodule update
+	sui = submodule update --init --recursive
 
 [github]
 	user = takecian
@@ -62,3 +62,11 @@ sui = submodule update --init --recursive
 [include]
     path = ~/.gitconfig.local
  
+[merge]
+    tool = vscode
+[mergetool]
+    prompt = false
+    keepBackup = false
+[mergetool "vscode"]
+    cmd = '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code' \"$MERGED\"
+    trustExitCode = false
