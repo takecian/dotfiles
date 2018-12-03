@@ -9,28 +9,27 @@
 ad = add
 ap = add -p
 # branch
+br = branch
 bc = rev-parse --abbrev-ref HEAD
 # cherry-pick
 cp = cherry-pick
 cpa = cherry-pick --abort
 cpc = cherry-pick --continue
+# checkout
+co = checkout
 # commit
 ci = commit
-ca = commit -a
+ca = commit --amend
 cm = commit -m
 # diff
 df = diff
-# status
-st = status
-# branch
-br = branch
-# checkout
-co = checkout
+# fetch
+ft = fetch
+fpr = "!f(){ git fetch origin pull/$1/head:$1; git checkout $1; }; f"
+fupr = "!f(){ git fetch upstream pull/$1/head:$1; git checkout $1; }; f"
 # log
 l = log --oneline
 lg = log --oneline --graph --decorate
-# show
-sh = show
 # push
 ps = push
 psf = push -f
@@ -39,16 +38,20 @@ psfoc = !git push -f origin $(git bc)
 # pull
 plo = pull origin
 plom = pull origin master
+ploc = !git pull origin $(git bc)
 plu = pull upstream
 plum = pull upstream master
+pluc = !git pull upstream $(git bc)
 # rebase
 rb = rebase
 rbi = rebase --interactive
 rba = rebase --abort
 rbc = rebase --continue
 rbs = rebase --skip
-# fetch
-ft = fetch
+# show
+sh = show
+# status
+st = status
 # submodule
 su = !git submodule update
 sui = submodule update --init --recursive
@@ -59,9 +62,3 @@ sui = submodule update --init --recursive
 [include]
     path = ~/.gitconfig.local
  
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
