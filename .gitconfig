@@ -7,6 +7,8 @@
 [alias]
 	# add
 	ad = add
+	aa = add --all
+	ai = add -i
 	ap = add -p
 	# branch
 	br = branch
@@ -17,6 +19,8 @@
 	cpc = cherry-pick --continue
 	# checkout
 	co = checkout
+	# clone
+	cl = clone
 	# commit
 	ci = commit
 	ca = commit --amend
@@ -48,6 +52,14 @@
 	rba = rebase --abort
 	rbc = rebase --continue
 	rbs = rebase --skip
+	# remote
+	ra = remote add
+	rr = remote rm
+	rv = remote -v
+	rao = remote add origin
+	rau = remote add upstream
+	rro = remote remove origin
+	rru = remote remove upstream
 	# reset
 	rs = reset
 	rsoh = !git reset origin/$(git bc) --hard
