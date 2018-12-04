@@ -32,7 +32,8 @@
 	fpr = "!f(){ git fetch origin pull/$1/head:$1; git checkout $1; }; f" # fetch pull request and checkout, $1 is PR number
 	fupr = "!f(){ git fetch upstream pull/$1/head:$1; git checkout $1; }; f"
 	# log
-	l = log --oneline
+	l = log
+	lo = log --oneline
 	lg = log --oneline --graph --decorate
 	# push
 	ps = push
