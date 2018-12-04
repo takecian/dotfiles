@@ -31,6 +31,7 @@ formulas=(
     fish
     rbenv
     mas
+    ffmpeg
 )
 
 echo "start brew install apps..."
