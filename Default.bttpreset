@@ -1,17 +1,7 @@
 {
   "BTTPresetName" : "Default",
-  "BTTPresetUUID" : "B6E447DF-4699-4745-8F76-3600DD94D577",
+  "BTTPresetUUID" : "6BCD6872-0197-4279-B8C7-0470B8160749",
   "BTTPresetContent" : [
-    {
-      "BTTAppBundleIdentifier" : "com.apple.finder",
-      "BTTAppName" : "Finder",
-      "BTTAppSpecificSettings" : {
-
-      },
-      "BTTTriggers" : [
-
-      ]
-    },
     {
       "BTTAppBundleIdentifier" : "BT.G",
       "BTTAppName" : "Global",
@@ -19,6 +9,33 @@
 
       },
       "BTTTriggers" : [
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/LINE.app",
+          "BTTAdditionalConfiguration" : "524288",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "28942A62-E5A5-4C2F-8BE3-0FDF13E910A1",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 37,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 5
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 207,
+          "BTTPredefinedActionName" : "Switch To Desktop 1",
+          "BTTAdditionalConfiguration" : "524288",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "FDA53806-DCAB-4C07-93CC-F68148EAE05E",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 18,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 8
+        },
         {
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : 13,
@@ -33,6 +50,19 @@
           "BTTOrder" : 0,
           "BTTIconData" : "",
           "BTTAlternateIconData" : ""
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 209,
+          "BTTPredefinedActionName" : "Switch To Desktop 3",
+          "BTTAdditionalConfiguration" : "524288",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "0BA1BD38-A98A-4213-A2FA-248B91F71116",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 20,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 10
         },
         {
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
@@ -52,6 +82,34 @@
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : 49,
           "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Utilities\/Activity%20Monitor.app",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "29CC5B3D-B902-4733-A2B8-895F38119648",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 0,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 11
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app",
+          "BTTAdditionalConfiguration" : "524288",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "BBA22B40-ED00-4F38-B2CF-6C6DE532103A",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 9,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 4
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
           "BTTLaunchPath" : "file:\/\/\/Applications\/Quiver.app",
           "BTTAdditionalConfiguration" : "524288",
           "BTTEnabled2" : 1,
@@ -61,6 +119,20 @@
           "BTTShortcutKeyCode" : 12,
           "BTTShortcutModifierKeys" : 524288,
           "BTTOrder" : 7
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Sublime%20Text.app",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "84372C29-D53E-49D4-8227-0CFBCFC5176C",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 11,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 13
         },
         {
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
@@ -74,20 +146,6 @@
           "BTTShortcutKeyCode" : 19,
           "BTTShortcutModifierKeys" : 524288,
           "BTTOrder" : 9
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Google%20Chrome.app",
-          "BTTAdditionalConfiguration" : "524288",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "58416D18-65F7-40F3-82BC-7072DDA74F80",
-          "BTTTriggerOnDown" : 0,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 5,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 1
         },
         {
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
@@ -107,6 +165,20 @@
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : 49,
           "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Google%20Chrome.app",
+          "BTTAdditionalConfiguration" : "524288",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "58416D18-65F7-40F3-82BC-7072DDA74F80",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 5,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 1
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
           "BTTLaunchPath" : "file:\/\/\/Applications\/iTerm.app",
           "BTTAdditionalConfiguration" : "524288",
           "BTTEnabled2" : 1,
@@ -121,56 +193,26 @@
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : 49,
           "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app",
-          "BTTAdditionalConfiguration" : "524288",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/WORKS.app",
+          "BTTAdditionalConfiguration" : "524320",
           "BTTEnabled2" : 1,
-          "BTTUUID" : "BBA22B40-ED00-4F38-B2CF-6C6DE532103A",
+          "BTTUUID" : "2BBA7867-8A93-4141-B195-3B64AA119EB9",
           "BTTTriggerOnDown" : 0,
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 9,
+          "BTTShortcutKeyCode" : 13,
           "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 4
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 207,
-          "BTTPredefinedActionName" : "Switch To Desktop 1",
-          "BTTAdditionalConfiguration" : "524288",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "FDA53806-DCAB-4C07-93CC-F68148EAE05E",
-          "BTTTriggerOnDown" : 0,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 18,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 8
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/LINE.app",
-          "BTTAdditionalConfiguration" : "524288",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "28942A62-E5A5-4C2F-8BE3-0FDF13E910A1",
-          "BTTTriggerOnDown" : 0,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 37,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 5
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 209,
-          "BTTPredefinedActionName" : "Switch To Desktop 3",
-          "BTTAdditionalConfiguration" : "524288",
-          "BTTEnabled2" : 1,
-          "BTTUUID" : "0BA1BD38-A98A-4213-A2FA-248B91F71116",
-          "BTTTriggerOnDown" : 0,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 20,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 10
+          "BTTOrder" : 12
         }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppSpecificSettings" : {
+
+      },
+      "BTTTriggers" : [
+
       ]
     }
   ],
