@@ -1,6 +1,6 @@
 {
   "BTTPresetName" : "Default",
-  "BTTPresetUUID" : "6BCD6872-0197-4279-B8C7-0470B8160749",
+  "BTTPresetUUID" : "BF7DB267-CD1D-44B2-A7A1-EC6A98CCE41C",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -35,6 +35,20 @@
           "BTTShortcutKeyCode" : 18,
           "BTTShortcutModifierKeys" : 524288,
           "BTTOrder" : 8
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Users\/jp21265\/Desktop\/",
+          "BTTAdditionalConfiguration" : "524288",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "06A956A8-E20F-4CFA-B314-A983D6EB3D4E",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 23,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 15
         },
         {
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
@@ -125,10 +139,10 @@
           "BTTPredefinedActionType" : 49,
           "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
           "BTTLaunchPath" : "file:\/\/\/Applications\/Sublime%20Text.app",
-          "BTTAdditionalConfiguration" : "524320",
+          "BTTAdditionalConfiguration" : "524288",
           "BTTEnabled2" : 1,
           "BTTUUID" : "84372C29-D53E-49D4-8227-0CFBCFC5176C",
-          "BTTTriggerOnDown" : 1,
+          "BTTTriggerOnDown" : 0,
           "BTTEnabled" : 1,
           "BTTShortcutKeyCode" : 11,
           "BTTShortcutModifierKeys" : 524288,
@@ -146,6 +160,20 @@
           "BTTShortcutKeyCode" : 19,
           "BTTShortcutModifierKeys" : 524288,
           "BTTOrder" : 9
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Users\/jp21265\/Downloads\/",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "330E6A87-41E7-46AF-8842-ABD26321E0F5",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 21,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 14
         },
         {
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
@@ -202,6 +230,20 @@
           "BTTShortcutKeyCode" : 13,
           "BTTShortcutModifierKeys" : 524288,
           "BTTOrder" : 12
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Launch Application \/ Open File \/ Start Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/MindNode.app",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTEnabled2" : 1,
+          "BTTUUID" : "AF1BFACB-A60B-438E-8F44-69C4FC3587AD",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 46,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 16
         }
       ]
     },
