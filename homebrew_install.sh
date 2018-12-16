@@ -32,6 +32,8 @@ formulas=(
     rbenv
     mas
     ffmpeg
+    graphviz
+    plantuml
 )
 
 echo "start brew install apps..."
