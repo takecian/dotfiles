@@ -34,6 +34,7 @@ formulas=(
     ffmpeg
     graphviz
     plantuml
+    pyenv
 )
 
 echo "start brew install apps..."
