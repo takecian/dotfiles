@@ -12,6 +12,7 @@
 	ap = add -p
 	# branch
 	br = branch
+	bd = branch -D
 	bc = rev-parse --abbrev-ref HEAD
 	# cherry-pick
 	cp = cherry-pick
