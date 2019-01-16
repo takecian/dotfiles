@@ -71,7 +71,7 @@ mas install 434290957 # motion
 mas install 866773894 # quiver
 mas install 1278508951 # trello
 mas install 1289197285 # mindnode
-mas install 
+mas install 539883307 # line
 
 cat << END
 
