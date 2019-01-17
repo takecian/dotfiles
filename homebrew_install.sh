@@ -34,6 +34,7 @@ formulas=(
     ffmpeg
     graphviz
     plantuml
+    zlib
     pyenv
 )
 
