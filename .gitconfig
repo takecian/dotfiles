@@ -43,6 +43,8 @@
 	psfoc = !git push -f origin $(git bc)
 	pso = push origin
 	psu = push upstream
+	psuc = !git push upstream $(git bc) # push current branch to origin
+	psfuc = !git push -f upstream $(git bc) # push current branch to origin
 	# pull
 	plo = pull origin
 	plom = pull origin master
