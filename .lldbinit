@@ -3,5 +3,5 @@ command script import ~/.lldb/paint.py
 
 # alias
 command alias poc expression -l objc -O --
-command alias flush expression CATransaction.flush()
+command alias flush expression -l objc -O -- [CATransaction flush]
 command alias tj thread jump --by 1
