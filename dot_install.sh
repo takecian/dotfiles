@@ -14,9 +14,10 @@ echo "Start setup..."
 
 #     ln -snfv ~/dotfiles/"$f" ~/
 # done
+ln -snfv ~/dotfiles/.config/fish/ ~/.config/
 ln -snfv ~/dotfiles/.gitconfig ~/
 ln -snfv ~/dotfiles/.lldbinit ~/
-ln -snfv ~/dotfiles/.config/fish/ ~/.config/
+ln -snfv ~/dotfiles/lldb/ ~/.lldb
 
 cat << END
 
