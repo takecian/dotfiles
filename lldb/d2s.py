@@ -6,7 +6,7 @@ def process(debugger, command, result, internal_dict):
     lldb.debugger.HandleCommand("""
     expr -l swift --
     func $process(_ data: Data) {
-        print(String(data: data, encoding: .utf8))
+        print(String(data: data, encoding: .utf8) ?? "data is nil")
     }
     """.strip())
     lldb.debugger.HandleCommand('expr -l swift -- $process(' + command + ')')
