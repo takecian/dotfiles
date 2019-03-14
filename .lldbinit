@@ -1,5 +1,6 @@
 command script import /usr/local/opt/chisel/libexec/fblldb.py
 command script import ~/.lldb/paint.py
+command script import ~/.lldb/string.py
 
 # alias
 command alias poc expression -l objc -O --
