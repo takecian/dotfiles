@@ -26,3 +26,6 @@ rbenv init - | source
 # pyenv
 pyenv init - | source
 
+# swiftenv
+if which swiftenv > /dev/null; status --is-interactive; and source (swiftenv init -|psub); end
+
