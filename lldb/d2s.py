@@ -5,12 +5,12 @@ import lldb
 def process(debugger, command, result, internal_dict):
     lldb.debugger.HandleCommand("""
     expr -l swift --
-    func $process(_ name: String) {
-        print(String(data: name, encoding: .utf8))
+    func $process(_ data: Data) {
+        print(String(data: data, encoding: .utf8))
     }
     """.strip())
     lldb.debugger.HandleCommand('expr -l swift -- $process(' + command + ')')
 
 def __lldb_init_module(debugger,internal_dict):
-    debugger.HandleCommand("command script add -f string.process string")
-    print "string command enabled."
+    debugger.HandleCommand("command script add -f d2s.process d2s")
+    print "d2s command enabled."
