@@ -29,3 +29,9 @@ pyenv init - | source
 # swiftenv
 if which swiftenv > /dev/null; status --is-interactive; and source (swiftenv init -|psub); end
 
+# android
+set --export ANDROID $HOME/Library/Android;
+set --export ANDROID_HOME $ANDROID/sdk;
+set -gx PATH $ANDROID_HOME/tools $PATH;
+set -gx PATH $ANDROID_HOME/tools/bin $PATH;
+set -gx PATH $ANDROID_HOME/platform-tools $PATH;
