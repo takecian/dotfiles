@@ -3,6 +3,7 @@
 import lldb
 
 def process(debugger, command, result, internal_dict):
+    lldb.debugger.HandleCommand('expr -l Swift -- import UIKit')
     lldb.debugger.HandleCommand("""
     expr -l swift --
     func $process(_ data: Data) {

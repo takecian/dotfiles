@@ -3,6 +3,7 @@
 import lldb
 
 def process(debugger, command, result, internal_dict):
+    lldb.debugger.HandleCommand('expr -l Swift -- import UIKit')
     lldb.debugger.HandleCommand("""
     expr -l swift --
     func $process(_ address: Int) {
@@ -11,6 +12,7 @@ def process(debugger, command, result, internal_dict):
         view.layer.borderWidth = 5
     }
     """.strip())
+    
     lldb.debugger.HandleCommand('expr -l swift -- $process(' + command + ')')
 
 def __lldb_init_module(debugger,internal_dict):
