@@ -4,15 +4,16 @@ import lldb
 
 def process(debugger, command, result, internal_dict):
     lldb.debugger.HandleCommand('expr -l Swift -- import UIKit')
-    lldb.debugger.HandleCommand("""
+    command_string="""
     expr -l swift --
     func $process(_ address: Int) {
-        let view = unsafeBitCast(address, to: UIView.self)
-        view.layer.borderColor = UIColor.red.cgColor
-        view.layer.borderWidth = 5
+        let view = unsafeBitCast(address, to: UIView.self);
+        view.layer.borderColor = UIColor.red.cgColor;
+        view.layer.borderWidth = 5;
+        CATransaction.flush()
     }
-    """.strip())
-    
+    """
+    lldb.debugger.HandleCommand(" ".join(command_string.splitlines()))    
     lldb.debugger.HandleCommand('expr -l swift -- $process(' + command + ')')
 
 def __lldb_init_module(debugger,internal_dict):
