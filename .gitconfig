@@ -48,10 +48,12 @@
 	# pull
 	plo = pull origin
 	plom = pull origin master
+	plod = pull origin develop
 	ploc = !git pull origin $(git bc) # pull current remote branch from origin
 	plu = pull upstream
 	plum = pull upstream master
 	pluc = !git pull upstream $(git bc)
+	plud = pull upstream develop
 	# rebase
 	rb = rebase
 	rbi = rebase --interactive
