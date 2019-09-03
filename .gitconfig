@@ -1,9 +1,10 @@
 [user]
 	name = Takeshi Fujiki
-	email = takeshi.fujiki@linecorp.com
+	email = takecian@gmail.com
 [core]
 	autocrlf = input
 	compression = 0
+	excludesfile = ~/.gitignore_global
 [alias]
 	# add
 	ad = add
