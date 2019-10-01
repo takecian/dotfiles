@@ -80,6 +80,10 @@
 	# submodule
 	su = !git submodule update
 	sui = submodule update --init --recursive
+	# switch
+	sw = switch
+	sc = switch -c
+	# restore
 
 [github]
 	user = takecian
