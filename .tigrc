@@ -9,3 +9,7 @@ set vertical-split = yes
 # 行数表示をON
 set blob-view-line-number = yes
 set blame-view-line-number = yes
+
+
+bind generic P      ?git push -u %(remote) %(repo:head)
+bind generic U      ?git pull %(remote)
