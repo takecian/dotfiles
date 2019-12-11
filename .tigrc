@@ -1,0 +1,15 @@
+# diff を highlight 表示
+# 事前にシンボリックリンク必要
+# sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
+set diff-highlight = true
+
+# 縦表示矯正
+set vertical-split = yes
+
+# 行数表示をON
+set blob-view-line-number = yes
+set blame-view-line-number = yes
+
+
+bind generic P      ?git push -u %(remote) %(repo:head)
+bind generic U      ?git pull %(remote)

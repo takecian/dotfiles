@@ -1,9 +1,10 @@
 [user]
 	name = Takeshi Fujiki
-	email = takeshi.fujiki@linecorp.com
+	email = takecian@gmail.com
 [core]
 	autocrlf = input
 	compression = 0
+	excludesfile = ~/.gitignore_global
 [alias]
 	# add
 	ad = add
@@ -48,10 +49,12 @@
 	# pull
 	plo = pull origin
 	plom = pull origin master
+	plod = pull origin develop
 	ploc = !git pull origin $(git bc) # pull current remote branch from origin
 	plu = pull upstream
 	plum = pull upstream master
 	pluc = !git pull upstream $(git bc)
+	plud = pull upstream develop
 	# rebase
 	rb = rebase
 	rbi = rebase --interactive
@@ -77,6 +80,10 @@
 	# submodule
 	su = !git submodule update
 	sui = submodule update --init --recursive
+	# switch
+	sw = switch
+	sc = switch -c
+	# restore
 
 [github]
 	user = takecian
