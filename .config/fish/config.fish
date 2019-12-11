@@ -35,3 +35,6 @@ set --export ANDROID_HOME $ANDROID/sdk;
 set -gx PATH $ANDROID_HOME/tools $PATH;
 set -gx PATH $ANDROID_HOME/tools/bin $PATH;
 set -gx PATH $ANDROID_HOME/platform-tools $PATH;
+
+# flutter
+set -gx PATH ~/Development/Flutter/flutter/bin $PATH;
