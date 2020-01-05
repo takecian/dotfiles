@@ -36,6 +36,7 @@ formulas=(
     plantuml
     zlib
     pyenv
+    chisel
 )
 
 echo "start brew install apps..."
@@ -44,10 +45,8 @@ for formula in "${formulas[@]}"; do
 done
 
 casks=(
-    dropbox
     bettertouchtool
     google-chrome
-    google-japanese-ime
     slack
     iterm2
     atom
@@ -55,9 +54,7 @@ casks=(
     visual-studio-code
     kindle
     deckset
-    duet
     charles
-
 )
 
 echo "start brew cask install apps..."
