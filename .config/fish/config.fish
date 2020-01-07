@@ -40,4 +40,5 @@ set -gx PATH $ANDROID_HOME/platform-tools $PATH;
 set -gx PATH ~/Development/Flutter/flutter/bin $PATH;
 
 # alias
-alias repo='cd (ghq list -p | peco)'
+alias repos='ghq list -p | peco'
+alias repo='cd (repos)'
