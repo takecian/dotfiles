@@ -21,7 +21,7 @@ function fish_user_key_bindings
 end
 
 # rbenv
-rbenv init - | source
+status --is-interactive; and source (rbenv init -|psub)
 
 # pyenv
 pyenv init - | source

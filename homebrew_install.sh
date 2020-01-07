@@ -37,6 +37,8 @@ formulas=(
     zlib
     pyenv
     chisel
+    ghq
+    hub
 )
 
 echo "start brew install apps..."
@@ -70,6 +72,7 @@ mas install 866773894 # quiver
 mas install 1278508951 # trello
 mas install 1289197285 # mindnode
 mas install 539883307 # line
+mas install 1179623856 # pastebot
 
 cat << END
 
