@@ -40,7 +40,8 @@ set -gx PATH $ANDROID_HOME/platform-tools $PATH;
 set -gx PATH ~/Development/Flutter/flutter/bin $PATH;
 
 # alias
-alias u='cd ../'
+alias up='cd ../'
 alias repos='ghq list -p | peco'
 alias repo='cd (repos)'
+alias urepo='ghq list | xargs ghq get -u'  # git pull all repositories
 
