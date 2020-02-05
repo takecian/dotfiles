@@ -44,4 +44,4 @@ alias up='cd ../'
 alias repos='ghq list -p | peco'
 alias repo='cd (repos)'
 alias urepo='ghq list | xargs ghq get -u'  # git pull all repositories
-
+alias clone='ghq get'
