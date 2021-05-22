@@ -13,6 +13,7 @@ ln -snfv ~/dotfiles/.gitconfig ~/
 ln -snfv ~/dotfiles/.lldbinit ~/
 ln -snfv ~/dotfiles/lldb/ ~/.lldb
 ln -snfv ~/dotfiles/.tigrc ~/
+ln -snfv ~/dotfiles/.zshrc ~/
 
 cat << END
 
