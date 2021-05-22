@@ -21,3 +21,23 @@ alias repos='ghq list -p | peco'
 alias repo='cd $(repos)'
 alias urepo='ghq list | xargs ghq get -u'  # git pull all repositories
 alias clone='ghq get'
+
+####### Path
+
+export PATH="$PATH:$HOME/Development/Flutter/flutter/bin"
+
+export PATH="$HOME/.rbenv/bin:$PATH" 
+eval "$(rbenv init - zsh)"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+export ANDROID="$HOME/Library/Android"
+export ANDROID_HOME="$ANDROID/sdk"
+export PATH="$ANDROID_HOME/tools $PATH"
+export PATH="$ANDROID_HOME/tools/bin $PATH"
+export PATH="$ANDROID_HOME/platform-tools $PATH"

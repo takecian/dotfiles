@@ -48,11 +48,11 @@
 	psfuc = !git push -f upstream $(git bc) # push current branch to origin
 	# pull
 	plo = pull origin
-	plom = pull origin master
+	plom = pull origin main
 	plod = pull origin develop
 	ploc = !git pull origin $(git bc) # pull current remote branch from origin
 	plu = pull upstream
-	plum = pull upstream master
+	plum = pull upstream main
 	pluc = !git pull upstream $(git bc)
 	plud = pull upstream develop
 	# rebase
