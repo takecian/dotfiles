@@ -21,11 +21,13 @@
 	cpc = cherry-pick --continue
 	# checkout
 	co = checkout
+	to = checkout
 	# clone
 	cl = clone
 	# commit
 	ci = commit
 	ca = commit --amend
+	can = commit --amend --no-edit
 	cm = commit -m
 	# diff
 	di = diff
@@ -73,6 +75,7 @@
 	rs = reset
 	rsoh = !git reset origin/$(git bc) --hard
 	rsuh = !git reset upstream/$(git bc) --hard
+	uc = reset --soft HEAD^
 	# show
 	sh = show
 	# status
@@ -107,3 +110,8 @@
 	trustExitCode = true
 [ghq]
 	root = ~/Development/Repos
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true

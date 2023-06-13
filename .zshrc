@@ -2,9 +2,8 @@
 source ~/dotfiles/zsh/git-prompt.sh
 
 # git-completionの読み込み
-fpath=(~/dotfiles/zsh $fpath)
-zstyle ':completion:*:*:git:*' script ~/dotfiles/zsh/git-completion.bash
-autoload -Uz compinit && compinit
+autoload -Uz compinit
+compinit
 
 # プロンプトのオプション表示設定
 GIT_PS1_SHOWDIRTYSTATE=true
@@ -24,18 +23,20 @@ alias clone='ghq get'
 
 ####### Path
 
+# rbenv
 export PATH="$PATH:$HOME/Development/Flutter/flutter/bin"
-
-export PATH="$HOME/.rbenv/bin:$PATH" 
+export PATH="$PATH:$HOME/.rbenv/bin" 
 eval "$(rbenv init - zsh)"
 
+# pyenv
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+export PATH="$PATH:$PYENV_ROOT/bin"
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+# golang
+export GOPATH="$HOME/Development/go"
+export PATH="$PATH:$GOPATH/bin"
 
+# Android
 export ANDROID="$HOME/Library/Android"
 export ANDROID_HOME="$ANDROID/sdk"
 export PATH="$ANDROID_HOME/tools $PATH"
